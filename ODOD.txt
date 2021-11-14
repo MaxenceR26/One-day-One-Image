@@ -1,0 +1,24 @@
+ONE DAY, ONE IMAGE !
+
+
+One day, One image -> 1 jour, Une image !
+Tout les jours vous allez lancer le logiciel ! ( Du moins si vous le souhaitez )
+
+Le logiciel vous proposera une image inédite,
+il y a le créateur de l'image ! La date de quand elle a était faites !
+( Le jour ou vous lancer le logiciel ducoup.. ) Le logiciel vous propose une explication de l'image bien précise !
+
+La couleur d'arriere plan du logiciel change en fonction de la couleur de l'image !
+Si l'image vous plait, vous pouvez la mettre en fond écran en appuyant sur le bouton
+
+/!\ Attention il est possible que la NASA poste une vidéo ou une music,
+dans ce cas là, le logiciel va le signaler ! Si c'est une vidéo youtube, le logiciel s'occupera automatiquement de la télécharger !
+
+
+----
+
+Première idées : Pouvoir choisir les jours que l'on veut regarder l'image !
+Deuxième idées : Crée un menu ou on peut voir les images du jours d'avant, ya 3 jours, et 7 jours.
+Troisième idées : Pouvoir mettre en favoris les images souhaitez est ensuite pouvoir choisir les images que l'on veut
+entre les images mise en favories bien sûr ! Est crée un fond écran automatique !
+Max 3 images !

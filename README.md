@@ -1,10 +1,10 @@
 # One day, One image ! 
 
-![LogoNasa-Img](/image/nasa.png)
+![LogoNasa-Img](/image/for readme/nasa.png)
 
 ### Explication :
 
-Version : 1.0
+Version : 2.0
 
 One day, One image -> 1 jour, Une image !
 Tout les jours vous allez lancer le logiciel ! ( Du moins si vous le souhaitez )
@@ -12,6 +12,8 @@ Tout les jours vous allez lancer le logiciel ! ( Du moins si vous le souhaitez )
 Le logiciel vous proposera une `image inédite`, il y a le créateur de l'image !
 La date de quand elle a était faites ! ( Le jour ou vous lancer le logiciel ducoup.. )
 Le logiciel vous propose une `explication` de l'image bien précise !
+
+Vous pouvez aussi, choisir le `jour` que vous voulez est vous verrez l'image du jour choisi !
 
 La couleur d'arriere plan du logiciel change en fonction de la couleur de l'image !
 Si l'image vous plait, vous pouvez la mettre en fond écran en appuyant sur le _**`bouton`**_ 
@@ -33,6 +35,9 @@ python -m pip install YOUR MODULE
 
 ### If you have PIP :
 pip install YOUR MODULE
+
+
+![LogoNasa-Img](/image/for readme/EXEMPLE.png)
 
 
 ## By Maxence R. / Kijusu#9602
