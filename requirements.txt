@@ -1,0 +1,17 @@
+shutil
+pathlib
+wget~=3.2
+PIL
+requests~=2.26.0
+pytube~=11.0.1
+
+future~=0.18.2
+Pillow~=8.3.2
+pip~=21.2.3
+newpy~=1.1.16
+cryptography~=3.4.8
+keyring~=23.0.1
+pkginfo~=1.7.1
+setuptools~=57.4.0
+docutils~=0.17.1
+imageio~=2.9.0
