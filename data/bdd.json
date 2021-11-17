@@ -1,0 +1,13 @@
+{
+    "data": {
+        "token": {
+            "api_key": ""
+        },
+        "image_fav": {
+            "name": []
+        },
+        "select_img": {
+            "name": []
+        }
+    }
+}
