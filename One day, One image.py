@@ -3,7 +3,7 @@
 # Love Nasa
 
 # Import Module
-import json
+
 import tkinter
 from datetime import date, timedelta
 import requests
@@ -15,7 +15,7 @@ from PIL import ImageTk
 from PIL import Image
 from requests import get
 import PIL.Image as pl
-import threading
+import ctypes
 
 
 from data.data import recv_token, recv_image, _add_favoris, _remove_favoris
@@ -47,7 +47,6 @@ def _rgb(rgb):
 def set_wallpaper(img):
     images = img
     path_os = os.getcwd()
-    import ctypes
     ctypes.windll.user32.SystemParametersInfoW(20, 0, f"{path_os}\image\{images}", 0)
     print('The wallpaper was well changed !')
 
@@ -155,16 +154,16 @@ class Main(tk.Tk):
         self.date_to_see = tk.Label(self, text=f"Date to see :", bg=_rgb((r, g, b)), fg='white')
         self.date_to_see.place(x=1210, y=630)
 
-        Images = tk.PhotoImage(file='./LOGO APP/not favoris.png').subsample(16)
+        Images = tk.PhotoImage(file='LOGO APP/button/not favoris.png').subsample(16)
         self.favoris_btn = tk.Button(self, image=Images, bg=_rgb((r, g, b)), activebackground=_rgb((r, g, b)), bd=0, command=self.favoris_setup)
         self.favoris_btn.pack(side=tk.BOTTOM, pady=23)
 
         if self.name_picture in recv_image():
-            Images = tk.PhotoImage(file='./LOGO APP/favoris.png').subsample(16)
+            Images = tk.PhotoImage(file='LOGO APP/button/favoris.png').subsample(16)
             self.favoris_btn.photo = Images
             self.favoris_btn['image'] = Images
         else:
-            Images = tk.PhotoImage(file='./LOGO APP/not favoris.png').subsample(16)
+            Images = tk.PhotoImage(file='LOGO APP/button/not favoris.png').subsample(16)
             self.favoris_btn.photo = Images
             self.favoris_btn['image'] = Images
 
@@ -175,14 +174,14 @@ class Main(tk.Tk):
     def favoris_setup(self):
         self.count += 1
         if self.count == 1:
-            Images = tk.PhotoImage(file='./LOGO APP/favoris.png').subsample(16)
+            Images = tk.PhotoImage(file='LOGO APP/button/favoris.png').subsample(16)
             self.favoris_btn.photo = Images
             self.favoris_btn['image'] = Images
             _add_favoris(self.name_picture)
             self.count += 1
 
         elif self.count >= 2:
-            Images = tk.PhotoImage(file='./LOGO APP/not favoris.png').subsample(16)
+            Images = tk.PhotoImage(file='LOGO APP/button/not favoris.png').subsample(16)
             self.favoris_btn.photo = Images
             self.favoris_btn['image'] = Images
             _remove_favoris(self.name_picture)
@@ -254,11 +253,11 @@ class Main(tk.Tk):
             self.wallpaper_btn['command'] = lambda: set_wallpaper(self.name_picture)
 
             if self.name_picture in recv_image():
-                Images = tk.PhotoImage(file='./LOGO APP/favoris.png').subsample(16)
+                Images = tk.PhotoImage(file='LOGO APP/button/favoris.png').subsample(16)
                 self.favoris_btn.photo = Images
                 self.favoris_btn['image'] = Images
             else:
-                Images = tk.PhotoImage(file='./LOGO APP/not favoris.png').subsample(16)
+                Images = tk.PhotoImage(file='LOGO APP/button/not favoris.png').subsample(16)
                 self.favoris_btn.photo = Images
                 self.favoris_btn['image'] = Images
 
@@ -332,11 +331,11 @@ class Main(tk.Tk):
                 self.wallpaper_btn['command'] = lambda: set_wallpaper(self.name_picture)
 
                 if self.name_picture in recv_image():
-                    Images = tk.PhotoImage(file='./LOGO APP/favoris.png').subsample(16)
+                    Images = tk.PhotoImage(file='LOGO APP/button/favoris.png').subsample(16)
                     self.favoris_btn.photo = Images
                     self.favoris_btn['image'] = Images
                 else:
-                    Images = tk.PhotoImage(file='./LOGO APP/not favoris.png').subsample(16)
+                    Images = tk.PhotoImage(file='LOGO APP/button/not favoris.png').subsample(16)
                     self.favoris_btn.photo = Images
                     self.favoris_btn['image'] = Images
             else:
@@ -407,11 +406,11 @@ class Main(tk.Tk):
                 self.wallpaper_btn['command'] = lambda: set_wallpaper(self.name_picture)
 
                 if self.name_picture in recv_image():
-                    Images = tk.PhotoImage(file='./LOGO APP/favoris.png').subsample(16)
+                    Images = tk.PhotoImage(file='LOGO APP/button/favoris.png').subsample(16)
                     self.favoris_btn.photo = Images
                     self.favoris_btn['image'] = Images
                 else:
-                    Images = tk.PhotoImage(file='./LOGO APP/not favoris.png').subsample(16)
+                    Images = tk.PhotoImage(file='LOGO APP/button/not favoris.png').subsample(16)
                     self.favoris_btn.photo = Images
                     self.favoris_btn['image'] = Images
             else:
@@ -483,11 +482,11 @@ class Main(tk.Tk):
                 self.wallpaper_btn['command'] = lambda: set_wallpaper(self.name_picture)
 
                 if self.name_picture in recv_image():
-                    Images = tk.PhotoImage(file='./LOGO APP/favoris.png').subsample(16)
+                    Images = tk.PhotoImage(file='LOGO APP/button/favoris.png').subsample(16)
                     self.favoris_btn.photo = Images
                     self.favoris_btn['image'] = Images
                 else:
-                    Images = tk.PhotoImage(file='./LOGO APP/not favoris.png').subsample(16)
+                    Images = tk.PhotoImage(file='LOGO APP/button/not favoris.png').subsample(16)
                     self.favoris_btn.photo = Images
                     self.favoris_btn['image'] = Images
             else:
