@@ -1,6 +1,6 @@
 # One day, One image ! 
 
-![LogoNasa-Img](/LOGO APP/nasa.png)
+![LogoNasa-Img](/image/nasa.png)
 
 ### Explication :
 
@@ -48,8 +48,6 @@ python -m pip install YOUR MODULE
 ### If you have PIP :
 pip install YOUR MODULE
 
-
-![LogoNasa-Img](/image/for readme/EXEMPLE.png)
 
 
 ## By Maxence R. / Kijusu#9602
