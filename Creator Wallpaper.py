@@ -90,8 +90,6 @@ class Select_Interface(tk.Tk):
             if " ✓" not in value_select:
                 select_image(value_select)
                 self.images.append(f'./image/{value_select}')
-            else:
-                pass
             if get_number_select_image() > 6:
                 print("You can't choose more than 6 images !")
                 break
